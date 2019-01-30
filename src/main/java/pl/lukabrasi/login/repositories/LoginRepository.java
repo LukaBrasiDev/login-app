@@ -12,5 +12,7 @@ public interface LoginRepository extends CrudRepository<LoginEntity, Integer> {
 
 
     boolean existsByLogin(String login);
+      boolean existsByLoginAndPassword(String login, String password);
+    Optional<LoginEntity> findByLoginAndPassword(String login, String password);
 
 }
