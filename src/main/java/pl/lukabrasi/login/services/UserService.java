@@ -18,9 +18,9 @@ public class UserService {
 
 
 
-    public boolean addUser(String user, String password, String email) {
+    public boolean addUser(String login, String password, String email) {
         LoginEntity loginEntity = new LoginEntity();
-        loginEntity.setUser(user);
+        loginEntity.setUser(login);
         loginEntity.setPassword(password);
         loginEntity.setEmail(email);
 
